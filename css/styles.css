@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
 :root {
   --bg-color: #160F29;
   --text-color: #f8f7fd;
   --box-color: #1D3D4E;
-  --tbox-color: repeating-linear-gradient(45deg, #215461 0, #215461 1px, #246A73 0, #246A73 50%);
+  --tbox-color: repeating-linear-gradient(45deg, #246A73 0, #246A73 1px, #215461 0, #215461 50%);
   --border: #2D7D7F;
   --spacing: 1rem;
   --padding: 1.5rem;
   --titlepad: 1rem;
   --border-width: 0.3em;
+  --listpad: 0.25rem;
 }
 
 body,
@@ -20,6 +23,8 @@ p,
   height: 100%;
   padding: 0px;
   margin: 0px;
+  font-family: "Inconsolata", monospace;
+  font-size: 16px;
 }
 
 body {
@@ -43,14 +48,13 @@ nav {
   margin-bottom: var(--spacing);
 }
 
-#container {
-  width: auto;
-  flex: 1;
-  padding-inline: 20vw;
+nav ul li {
+  padding: var(--listpad);
+  list-style-type: none;
 }
 
-#mainspace {
-  width: 80%;
+a {
+  color: #95B7A6;
 }
 
 .mainbox {
@@ -68,10 +72,20 @@ nav {
 .titlebox {
   border-bottom: var(--border-width) dashed var(--border);
   padding: var(--titlepad);
-  background-color: var(--box-color);
-  opacity: 0.8;
   background-size: 10px 10px;
-  background-image: var(--tbox-color)
+  background-image: var(--tbox-color);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#container {
+  width: auto;
+  flex: 1;
+  padding-inline: 20vw;
+}
+
+#mainspace {
+  width: 80%;
 }
 
 @media only screen and (max-width: 900px) {
