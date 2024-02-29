@@ -1,10 +1,12 @@
 :root {
   --bg-color: #160F29;
-  --text-color: #eae5f9;
+  --text-color: #f8f7fd;
   --box-color: #1D3D4E;
+  --tbox-color: repeating-linear-gradient(45deg, #215461 0, #215461 1px, #246A73 0, #246A73 50%);
   --border: #2D7D7F;
   --spacing: 1rem;
   --padding: 1.5rem;
+  --titlepad: 1rem;
   --border-width: 0.3em;
 }
 
@@ -26,12 +28,6 @@ body {
   color: var(--text-color);
 }
 
-#container {
-  width: auto;
-  flex: 1;
-  padding-inline: 20vw;
-}
-
 header {
   background-color: var(--box-color);
   margin-bottom: var(--spacing);
@@ -43,8 +39,18 @@ main {
   gap: 10px;
 }
 
+nav {
+  margin-bottom: var(--spacing);
+}
+
+#container {
+  width: auto;
+  flex: 1;
+  padding-inline: 20vw;
+}
+
 #mainspace {
-  width: 90%;
+  width: 80%;
 }
 
 .mainbox {
@@ -61,11 +67,11 @@ main {
 
 .titlebox {
   border-bottom: var(--border-width) dashed var(--border);
-  padding: var(--padding);
+  padding: var(--titlepad);
   background-color: var(--box-color);
   opacity: 0.8;
   background-size: 10px 10px;
-  background-image: repeating-linear-gradient(45deg, #444cf7 0, #444cf7 1px, #e5e5f7 0, #e5e5f7 50%);
+  background-image: var(--tbox-color)
 }
 
 @media only screen and (max-width: 900px) {
