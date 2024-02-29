@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/styles.css">
+	<title>WAOW KAOUR!</title>
+
+	<style>
+		:root {
+			--background: url("/imgs/");
+		}
+
+		body,
+		html,
+		#container {
+			width: 100vw;
+			height: 100vh;
+			padding: 0px;
+			margin: 0px;
+		}
+
+		body {
+			display: flex;
+		}
+
+		#container {
+			width: auto;
+			flex: 1;
+			padding-inline: 15vw;
+		}
+
+		main {
+			display: flex;
+			flex-direction: row;
+
+			gap: 10px;
+		}
+
+		main>nav {
+			width: 200px;
+			height: 100%;
+			display: grid;
+			grid-template-rows: 50% 50%;
+			grid-template-columns: 100%;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="container">
+		<header>
+			<center>
+				<h1>WAOW KAORUS!</h1>
+			</center>
+		</header>
+
+		<main>
+			<aside>
+				<nav>
+					<div class="titlebox">Navigation</div>
+					<div class="mainbox">
+						<ul>
+							<li>Of importance</li>
+							<li>Archives</li>
+							<li>Socials</li>
+							<li>Collections</li>
+						</ul>
+					</div>
+				</nav>
+
+				<div id="stacafe">
+					<div class="titlebox">status.cafe</div>
+					<div id="statuscafe" class="mainbox">
+						<div id="statuscafe-username"></div>
+						<div id="statuscafe-content"></div>
+					</div>
+				</div>
+
+			</aside>
+
+			<section id="mainspace">
+				<div class="titlebox">
+					hi hello
+				</div>
+				<div class="mainbox">
+					<h2>I LOVE MY HOME</h2>
+					<p>Kaoru kaoru kaoru kaoru kaoru kaoru kaoru kaoru kaoru something something i love kaoru I don't know what to write about myself to be fair, I hope this text filler means something to you though. It's my personal site, not that I care if it makes sense to you or not!!!</p>
+					<div style="width: 100%; height:auto; display:flex; justify-content: center;"><img src="/imgs/omgkaoru.png" alt="Kaoru ryuzaki saying 'Ehe!'"></div>
+					<p>I went from having carrds, rentries, and so much more just to land upon this place. Of course, this place won't be the last into my ventures of giving myself a place on the sticky cobwebs of internet, but oh well. I'm here now. Here's my button just for reading that, or maybe you <em>didn't</em> read but you just wanted to get the button.</p>
+					<div id="mybutton" style="display: flex; justify-content: center;">
+						<div id="img">
+							<img src="/imgs/kaorunow.gif" alt="Kaoru NOW!" style="height: 31px; width: 88px;">
+						</div>
+						<textarea><a><img src="/imgs/kaorunow.gif" alt="Kaoru NOW!"></a></textarea>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+	</div>
+
+	<script src="https://status.cafe/current-status.js?name=sgbx" defer></script>
+</body>
+
+</html>
