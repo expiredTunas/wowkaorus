@@ -2,8 +2,10 @@
   --bg-color: #160F29;
   --text-color: #eae5f9;
   --box-collor: #1D3D4E;
+  --border: #2D7D7F;
   --spacing: 1rem;
-  --padding: 1rem;
+  --padding: 1.5rem;
+  --border-width: 0.3em;
 }
 
 body,
@@ -41,10 +43,23 @@ main {
   gap: 10px;
 }
 
+#mainspace {
+  width: 90%;
+}
+
 .mainbox {
   background-color: #1D3D4E;
   padding: var(--padding);
 }
+
+.contain {
+  border-color: var(--border);
+  border-style: solid;
+  border-radius: 10px;
+  border-width: var(--border-width);
+}
+
+.titlebox
 
 @media only screen and (max-width: 900px) {
   #container {
