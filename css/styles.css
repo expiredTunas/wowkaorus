@@ -2,7 +2,8 @@
   --bg-color: #160F29;
   --text-color: #eae5f9;
   --box-collor: #1D3D4E;
-  --spacing: 30px
+  --ex-spacing: 30px;
+  --padding: 1rem;
 }
 
 body,
@@ -42,6 +43,7 @@ main {
 
 .mainbox {
   background-color: #1D3D4E;
+  padding: var(--padding);
 }
 
 @media only screen and (max-width: 900px) {
