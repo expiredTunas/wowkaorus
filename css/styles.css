@@ -2,7 +2,7 @@
   --bg-color: #160F29;
   --text-color: #eae5f9;
   --box-collor: #1D3D4E;
-  --ex-spacing: 30px;
+  --spacing: 1rem;
   --padding: 1rem;
 }
 
@@ -27,12 +27,12 @@ body {
 #container {
   width: auto;
   flex: 1;
-  padding-inline: 30vw;
+  padding-inline: 20vw;
 }
 
 header {
   background-color: var(--box-collor);
-  padding: 1rem;
+  margin-bottom: var(--spacing);
 }
 
 main {
