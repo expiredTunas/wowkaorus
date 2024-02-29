@@ -1,7 +1,7 @@
 :root {
   --bg-color: #160F29;
   --text-color: #eae5f9;
-  --box-collor: #1D3D4E;
+  --box-color: #1D3D4E;
   --border: #2D7D7F;
   --spacing: 1rem;
   --padding: 1.5rem;
@@ -33,7 +33,7 @@ body {
 }
 
 header {
-  background-color: var(--box-collor);
+  background-color: var(--box-color);
   margin-bottom: var(--spacing);
 }
 
@@ -59,7 +59,14 @@ main {
   border-width: var(--border-width);
 }
 
-.titlebox
+.titlebox {
+  border-bottom: var(--border-width) dashed var(--border);
+  padding: var(--padding);
+  background-color: var(--box-color);
+  opacity: 0.8;
+  background-size: 10px 10px;
+  background-image: repeating-linear-gradient(45deg, #444cf7 0, #444cf7 1px, #e5e5f7 0, #e5e5f7 50%);
+}
 
 @media only screen and (max-width: 900px) {
   #container {
@@ -74,3 +81,4 @@ main {
     order: 3;
   }
 }
+
