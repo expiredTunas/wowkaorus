@@ -2,16 +2,20 @@
 
 :root {
   --bg-color: #160F29;
+  --bg-color2: #362e4a;
   --text-color: #f8f7fd;
   --box-color: #1D3D4E;
   --tbox-color: repeating-linear-gradient(45deg, #246A73 0, #246A73 1px, #215461 0, #215461 50%);
   --border: #2D7D7F;
-  --spacing: 1rem;
-  --padding: 1.5rem;
+  --spacing: 0.7rem;
   --titlepad: 1rem;
-  --border-width: 0.3em;
-  --listpad: 0.25rem;
+  --border-width: 0.4em;
+  --listpad: 0.3rem;
+  --text-highlight: #E8CFB5;
+  --text-highlight2: #215461;
 }
+
+* {cursor: url(https://cur.cursors-4u.net/cursors/cur-4/cur361.cur), auto !important;}
 
 body,
 html,
@@ -27,8 +31,14 @@ p,
   font-size: 16px;
 }
 
+textarea {
+  resize: none;
+}
+
 body {
   display: flex;
+  background-image: radial-gradient(var(--bg-color2) 1.5px, transparent 2.5px);
+  background-size: 32px 32px;
   background-color: var(--bg-color);
   color: var(--text-color);
 }
@@ -41,25 +51,33 @@ header {
 main {
   display: flex;
   flex-direction: row;
-  gap: 10px;
 }
 
 nav {
   margin-bottom: var(--spacing);
 }
 
+nav ul {
+  padding-left: 0.8rem;
+}
+
 nav ul li {
+  list-style-image: url("/imgs/liststyle.gif");
+  font-weight: bold;
   padding: var(--listpad);
-  list-style-type: none;
 }
 
 a {
   color: #95B7A6;
 }
 
+p {
+  padding: 5px;
+}
+
 .mainbox {
   background-color: #1D3D4E;
-  padding: var(--padding);
+  padding: 1.5rem;
 }
 
 .contain {
@@ -86,15 +104,42 @@ a {
 
 #mainspace {
   width: 80%;
+  margin-left: var(--spacing);
 }
 
-@media only screen and (max-width: 900px) {
-  #container {
-    padding-inline: 5vw;
+#statuscafe-content {
+  border-color: var(--border);
+  border-style: dashed;
+  margin: 0.7rem;
+  padding: 0.7rem;
+}
+
+::selection {
+  color: var(--text-highlight2);
+  background: var(--text-highlight);
+}
+
+@media only screen and (max-width: 875px) {
+  aside {
+    width: 100%;
   }
 
   main {
     flex-wrap: wrap;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  #container {
+    padding-inline: 5vw;
+  }
+
+  #mainspace {
+    width: 100%;
+    margin-top: var(--spacing);
+    margin-left: 0;
   }
 
   #stacafe {
