@@ -163,6 +163,7 @@ aside a:hover {
     top: 0px; left: 0px;
     height: 100vh; width: 230px;
     z-index: 100000;
+    transition: left 0.75s ease-in-out;
   }
 
   nav.contain {
@@ -186,10 +187,15 @@ aside a:hover {
     display: unset;
     position: fixed;
     cursor: pointer;
-    left: 260px; top: 15px;
+    left: 267px; top: 20px;
     background-color: #224f61;
     border-radius: 10px;
     padding: 10px;
+    border-style: solid;
+    border-color: var(--border);
+    border-width: var(--border-width);
+    filter: drop-shadow(0px 0px 15px #120a2a);
+    transition: left 0.75s ease-in-out
   }
 
   #navbut input{
@@ -216,7 +222,7 @@ aside a:hover {
   }
 
   nav:has(input:checked) > #navbut {
-    left: 23px;
+    left: 30px;
   }
 }
 
