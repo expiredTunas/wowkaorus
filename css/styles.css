@@ -56,7 +56,9 @@ main {
 
 a {
   color: var(--link);
-  transition: color ease 0.4s, font-size ease 0.4s, opacity ease 0.5s; 
+  position: relative;
+  transition: color ease 0.4s, font-size ease 0.4s, opacity ease 0.5s;
+  z-index: 1;
 }
 
 a, li > a {
@@ -136,6 +138,27 @@ aside > .contain {
   background: var(--text-highlight);
 }
 
+#mainspace a::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background-color: #F3DFC1;
+  transform: scaleY(0);
+  transition: transform ease 0.15s;
+  transform-origin: bottom;
+  z-index: -1;
+}
+
+#mainspace a:hover{
+  color: var(--bg-color);
+}
+
+#mainspace a:hover::before{
+  transform: scaleY(1);
+}
+
 aside a:hover {
   color: var(--link-hover);
   font-size: 115%;
@@ -160,7 +183,7 @@ aside a:hover {
 
   nav {
     position: fixed;
-    top: 0px; left: 0px;
+    top: 0px; left: -240px;
     height: 100vh; width: 230px;
     z-index: 100000;
     transition: left 0.75s ease-in-out;
@@ -187,7 +210,7 @@ aside a:hover {
     display: unset;
     position: fixed;
     cursor: pointer;
-    left: 267px; top: 20px;
+    left: 30px; top: 20px;
     background-color: #224f61;
     border-radius: 10px;
     padding: 10px;
@@ -218,11 +241,11 @@ aside a:hover {
   }
 
   nav:has(input:checked) {
-    left: -240px;
+    left: 0px;
   }
 
   nav:has(input:checked) > #navbut {
-    left: 30px;
+    left: 266px;
   }
 }
 
