@@ -161,7 +161,7 @@ aside a:hover {
   nav {
     position: fixed;
     top: 0px; left: 0px;
-    height: 100vh; width: 200px;
+    height: 100vh; width: 230px;
     z-index: 100000;
   }
 
@@ -170,17 +170,32 @@ aside a:hover {
     border-width: 0px var(--border-width) 0px 0px;
   }
 
+  nav .titlebox{
+    font-size: 28px;
+    padding: 28px;
+  }
 
   #navl li {
-    font-size: 18px;
-    padding-bottom: 1rem;
+    font-size: 22px;
+    padding-top: 1.2rem;
+    list-style-image: none;
     flex: content;
   }
 
   #navbut {
     display: unset;
     position: fixed;
+    cursor: pointer;
+    left: 260px; top: 15px;
+    background-color: #224f61;
+    border-radius: 10px;
+    padding: 10px;
   }
+
+  #navbut input{
+    display: none;
+  }
+
 
   #container {
     padding-inline: 5vw;
@@ -196,8 +211,12 @@ aside a:hover {
     order: 1;
   }
 
-  #navbut input{
-    display: none;
+  nav:has(input:checked) {
+    left: -240px;
+  }
+
+  nav:has(input:checked) > #navbut {
+    left: 23px;
   }
 }
 
