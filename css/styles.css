@@ -173,13 +173,13 @@ aside a:hover {
 
   #navl li {
     font-size: 18px;
-    padding-bottom: 1.2rem;
+    padding-bottom: 1rem;
     flex: content;
   }
 
   #navbut {
-    margin-left: 20px;
     display: unset;
+    position: fixed;
   }
 
   #container {
@@ -194,6 +194,11 @@ aside a:hover {
 
   #stacafe {
     order: 1;
+  }
+
+  #navbut input{
+    display: none;
+  }
 }
 
 @keyframes bg-anim {
