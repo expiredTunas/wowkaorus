@@ -78,6 +78,10 @@ aside > .contain {
   margin-bottom: var(--spacing);
 }
 
+section {
+  margin-bottom: var(--spacing);
+}
+
 .mainbox {
   padding: 1.5rem;
 }
