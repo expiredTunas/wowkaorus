@@ -148,6 +148,7 @@ section {
   width: 100%;
   height: 100%;
   left: 0;
+  bottom: 0;
   background-color: #F3DFC1;
   transform: scaleY(0);
   transition: transform ease 0.15s;
