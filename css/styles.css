@@ -67,7 +67,8 @@ a, li > a {
 }
 
 p {
-  padding: 5px;
+  margin: 10px;
+  overflow-wrap: break-word;
 }
 
 aside {
